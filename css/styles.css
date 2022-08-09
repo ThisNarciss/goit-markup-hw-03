@@ -25,7 +25,6 @@ body {
   background-color: var(--fon-main-color);
   color: var(--main-color-text);
   letter-spacing: 0.03em;
-  width: 1600px;
 }
 h1,
 h2,
@@ -222,7 +221,6 @@ ul {
 /*Footer*/
 .footer {
   background-color: var(--fon-section-bgc);
-  margin-top: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -233,8 +231,6 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-
-  
 }
 .whitening {
   color: var(--fon-main-color);
@@ -266,6 +262,7 @@ ul {
 .portfolio {
   background-color: var(--fon-main-color);
   margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .portfolio-filter-item + .portfolio-filter-item {
