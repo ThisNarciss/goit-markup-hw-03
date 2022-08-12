@@ -347,15 +347,16 @@ button {
   background-color: var(--fon-main-color);
 }
 
-.portfolio-filter-item + .portfolio-filter-item {
-  margin-left: 8px;
-}
 .portfolio-filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 
   list-style-type: none;
+}
+
+.portfolio-filter-item + .portfolio-filter-item {
+  margin-left: 8px;
 }
 
 .portfolio-filter-btn {
