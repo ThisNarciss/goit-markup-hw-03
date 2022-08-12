@@ -45,9 +45,16 @@ img {
   max-width: 100%;
 }
 
+button {
+  font-family: inherit;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container {
   width: 1200px;
@@ -70,12 +77,12 @@ img {
   margin: -1px;
 }
 
-.box {
+.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav-box {
+.nav-content {
   display: flex;
   align-items: center;
 }
@@ -120,12 +127,11 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  font-family: inherit;
   text-decoration: none;
 
-  display: inline-block;
+  display: block;
   padding-top: 32px;
-  padding-bottom: 31px;
+  padding-bottom: 32px;
 }
 
 .site-nav-link:hover,
@@ -142,7 +148,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  font-family: inherit;
   text-decoration: none;
 }
 .header-contacts-link:hover,
@@ -154,12 +159,6 @@ img {
 }
 /*Main*/
 
-.page-main {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1600px;
-}
-
 /*Hero*/
 
 .hero {
@@ -168,7 +167,7 @@ img {
   padding-bottom: 200px;
 }
 
-.title-btn {
+.hero-content {
   text-align: center;
 }
 
@@ -194,7 +193,6 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
-  font-family: inherit;
 
   border: none;
   border-radius: 4px;
@@ -338,7 +336,6 @@ img {
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
-  font-family: inherit;
 }
 .address-item-link:hover,
 .address-item-link:focus {
@@ -368,7 +365,6 @@ img {
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
-  font-family: inherit;
 
   padding: 6px 22px;
   border: none;
@@ -386,21 +382,17 @@ img {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-
-  margin-left: -30px;
-  margin-top: -30px;
+  gap: 30px;
 
   list-style-type: none;
 }
 .portfolio-item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  flex-basis: calc((100% - 60px) / 3);
 }
+
 .portfolio-item-link {
   text-decoration: none;
   color: inherit;
-  font-family: inherit;
 }
 
 .portfolio-item-title {
@@ -414,12 +406,15 @@ img {
 .portfolio-item-text {
   color: var(--secondary-text-color);
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
 }
 .down-border {
-  border: 1px solid var(--portfolio-border-color);
-  padding-top: 19px;
-  padding-left: 23px;
-  padding-right: 23px;
-  padding-bottom: 19px;
+  border-bottom: 1px solid var(--portfolio-border-color);
+  border-left: 1px solid var(--portfolio-border-color);
+  border-right: 1px solid var(--portfolio-border-color);
+
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
